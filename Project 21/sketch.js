@@ -32,7 +32,7 @@ function setup(){
 
 function draw() {
     background(rgb(169,169,169));
-    createEdgeSprites();
+    edges=createEdgeSprites();
     ball.bounceOff(edges);
 
 
@@ -56,4 +56,6 @@ function draw() {
         ball.shapeColor = rgb(0,100,0);
     }
 
+
+    drawSprites();
 }
